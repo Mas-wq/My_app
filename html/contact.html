@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — SATS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1 class="logo">SA<span>TS</span></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="checkin.html">Check In</a></li>
+          <li><a href="history.html">Attendance History</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="container form-page">
+      <h2>Contact Support</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong>support@nmu.edu.eg</p>
+        <p><strong>Phone:</strong> +20457844567</p>
+        <p><strong>Office:</strong> CSE -Building B, Room 210</p>
+      </div>
+
+      <h3>Send a Message</h3>
+      <form id="contactForm" onsubmit="return false;">
+        <label>Your Email<input id="cEmail" type="email" required /></label>
+        <label>Subject<input id="cSubject" required /></label>
+        <label
+          >Message<textarea id="cMessage" rows="5" required></textarea>
+        </label>
+        <button id="sendContactBtn" class="btn">Send</button>
+        <p id="contactMsg" class="muted"></p>
+      </form>
+    </main>
+
+    <script src="../js/contact.js"></script>
+  </body>
+</html>

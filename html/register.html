@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Register — SATS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1 class="logo">SA<span>TS</span></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="checkin.html">Check In</a></li>
+          <li><a href="history.html">Attendance History</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="container form-page">
+      <h2>Student Registration</h2>
+      <form id="registerForm" onsubmit="return false;">
+        <label>Full Name<input id="name" required /></label>
+        <label>Student ID<input id="studentId" required /></label>
+        <label>Email<input id="email" type="email" required /></label>
+        <label>Password<input id="password" type="password" required /></label>
+        <button id="registerBtn" class="btn">Register (Session)</button>
+        <p class="muted">
+          Registration is saved for this browser session (sessionStorage).
+        </p>
+      </form>
+    </main>
+
+    <script src="../js/register.js"></script>
+  </body>
+</html>

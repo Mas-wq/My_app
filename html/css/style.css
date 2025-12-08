@@ -1,0 +1,342 @@
+/* Home Page */
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7ff;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/*home navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-top: 45px;
+  padding-right: 80px;
+}
+
+.logo {
+  color:#0d437f;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+span {
+  color: #13d3d3;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 45px;
+}
+
+nav ul li a {
+  color: #0d437f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  border: 2px solid #13d3d3;
+  padding: 10px 5px;
+  border-radius: 30px;
+
+}
+/* ===== HERO SECTION ===== */
+/* Section that contains the cards */
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; /*⬅️ ينزل الكروت لتحت*/
+}
+
+/* Centering wrapper */
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* المسافة بين الكروت */
+  flex-wrap: wrap; /* يخليها تنزل تحت لو الشاشة صغيرة */
+}
+
+/* Cards design */
+.card {
+  width: 300px;
+  height: 300px;
+  background: #191919;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  color: #cccccc;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h5 {
+  font-size: 23px;
+  color: rgba(51, 157, 250, 0.914);
+  margin-bottom: 25px;
+}
+.pra p {
+  color: #c1ddf4d0;
+  margin-bottom: 20px;
+  line-height: 27px;
+  font-size: 20px;
+}
+
+/* Icons */
+.card i {
+  font-size: 40px;
+  color: #4c22c3; /* بنفسجي شيك */
+  margin-bottom: 10px;
+}
+
+/* Button */
+.Button {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: #4c22c3;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.Button:hover {
+  background: #351894;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  margin-top: 50px;
+  background-color: #0d437f;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Register */
+/* ===== FORM PAGE ===== */
+.form-page {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.form-page h2 {
+  margin-bottom: 20px;
+  color: #0d437f;
+}
+
+.form-page label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form-page input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Checkin */
+/* ===== FORM PAGE ===== */
+.form-page {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.form-page h2 {
+  margin-bottom: 20px;
+  color: #0d437f;
+}
+
+.form-page label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form-page input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 12px 22px;
+  background-color: #4c22c3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+/* History */
+/* ===== MAIN CONTENT ===== */
+main h2 {
+  margin-bottom: 20px;
+  color: #4c22c3;
+}
+
+/* ===== ATTENDANCE LIST ===== */
+#historyList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#historyList .record {
+  background-color: #e9f2ff;
+  padding: 15px;
+  border-left: 5px solid #1257a6;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/* ===== MUTED TEXT ===== */
+.muted {
+  font-size: 13px;
+  color: #555;
+  margin-top: 10px;
+  display: block;
+}
+
+/* calendar */
+/* ===== GLOBAL ===== */
+/* ===== MAIN CONTENT ===== */
+main h2 {
+  margin-bottom: 20px;
+  color: #0d437f;
+}
+
+/* ===== CALENDAR CONTROLS ===== */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.controls select,
+.controls input,
+.controls button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.controls button {
+  background-color: #04627e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.controls button:hover {
+  background-color: #0d437f;
+}
+
+/* ===== CALENDAR VIEW ===== */
+#calendarView {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.calendar-box {
+  flex: 1 1 150px;
+  background-color: #e9f2ff;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 5px solid #1257a6;
+  font-size: 14px;
+}
+
+/* contact */
+/* ===== GLOBAL ===== */
+/* ===== FORM PAGE ===== */
+.form-page {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.form-page h2,
+.form-page h3 {
+  margin-bottom: 15px;
+  color: #0d437f;
+}
+
+.contact-info {
+  background-color: #e9f2ff;
+  padding: 15px;
+  border-left: 5px solid #1257a6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.form-page label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form-page input,
+.form-page textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}

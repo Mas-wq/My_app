@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Calendar — SATS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1 class="logo">SA<span>TS</span></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="checkin.html">Check In</a></li>
+          <li><a href="history.html">Attendance History</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="container">
+      <h2>Attendance Calendar</h2>
+      <div id="calendarControls" class="controls">
+        <select id="viewSelect">
+          <option value="month">Month</option>
+          <option value="week">Week</option>
+          <option value="year">Year</option>
+        </select>
+        <input type="month" id="monthPicker" />
+        <button id="renderCal">Show</button>
+      </div>
+
+      <div id="calendarView"></div>
+    </main>
+
+    <script src="../js/calendar.js"></script>
+  </body>
+</html>

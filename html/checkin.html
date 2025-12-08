@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Check In — SATS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1 class="logo">SA<span>TS</span></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="checkin.html">Check In</a></li>
+          <li><a href="history.html">Attendance History</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="container form-page">
+      <h2>Class Check In</h2>
+      <div id="profileNotice" class="muted"></div>
+      <form id="checkinForm" onsubmit="return false;">
+        <label>Class Code<input id="classCode" required /></label>
+        <label
+          >Smart Question (optional)<input
+            id="smartQ"
+            placeholder="e.g. Today's lecture topic"
+        /></label>
+        <button id="checkinBtn" class="btn">Check In</button>
+        <p id="checkinMsg" class="muted"></p>
+      </form>
+    </main>
+
+    <script src="../js/checkin.js"></script>
+  </body>
+</html>
